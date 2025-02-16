@@ -11,4 +11,6 @@ module.exports = function (app) {
   app.use("/api", require("./api/auth/auth.route"));
   app.use("/api", require("./api/lostReason/lostReason.route"));
   app.use("/api", require("./api/leadStatus/leadStatus.route"));
+  app.use("/api", require("./api/docter/docter.route"));
+  app.use("/api", require("./api/patient/patient.route"));
 };
